@@ -55,6 +55,12 @@ h2{
   position: relative;
   z-index: 1;
 }
+button {
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    color: black;
+}
 .card{
     width: 200px;
     height: 300px;
