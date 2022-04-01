@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+@media (max-aspect-ratio: 16/9) {
+    .showcase video { 
+        width:auto;
+        height: 100%;
+    }
+}
 .showcase {
     position: absolute;
     right: 0;
@@ -15,9 +21,11 @@
     background-color: #111;
     color: #fff;
 }
+
 .showcase video
 {
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -75,7 +83,10 @@ h2{
     background-image: url(https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480x270/7/9/6/504796_pia00135_orig_890496.jpg);
 }
 .card4{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Io_highest_resolution_true_color.jpg/1200px-Io_highest_resolution_true_color.jpg);
+}
+.card5{
+    background-image: url(https://www.go-astronomy.com/images/observatories0.jpg);
 }
 .card:hover{
     transform: translateY(-10px);
