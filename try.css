@@ -116,6 +116,7 @@ h3{
 h5 {
     color:#fff;
     font-size: 25px;
+    text-shadow: #000000 0 0 10px; 
 }
 p {
     color:#fff;
