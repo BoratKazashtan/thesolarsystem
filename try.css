@@ -72,6 +72,7 @@ h2{
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
+    align-items: flex-start;
 
 }
 .card1{
