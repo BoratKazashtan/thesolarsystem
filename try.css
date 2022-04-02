@@ -55,13 +55,7 @@ h2{
   position: relative;
   z-index: 1;
 }
-button {
-    width: 30px;
-    height: 20px;
-    background-color: #fff;
-    color: black;
-    z-index: 1;
-}
+
 .card{
     width: 200px;
     height: 300px;
@@ -98,12 +92,7 @@ button {
 .card:hover{
     transform: translateY(-10px);
 }
-a {
-    
-    transition-property: color;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-}
+
 h3{
     color: #fff;
     position: relative;
@@ -142,12 +131,7 @@ h2{
   position: relative;
   z-index: 1;
 }
-button {
-    width: 30px;
-    height: 20px;
-    background-color: #fff;
-    color: black;
-}
+
 .card{
     width: 200px;
     height: 300px;
