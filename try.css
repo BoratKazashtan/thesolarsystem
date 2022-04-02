@@ -2,13 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
   }
-@media (max-aspect-ratio: 16/9) {
-    .showcase video { 
-        width:auto;
-        height: 100%;
-    }
-}
 .showcase {
     position: absolute;
     right: 0;
@@ -55,16 +51,20 @@ h2{
   position: relative;
   z-index: 1;
 }
-
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 .card{
     width: 200px;
-    height: 300px;
+    height: 230px;
     position: relative;
     top: 50px;
-    left: 200px;
+    left: 150px;
     display: inline-block;
     border-radius: 10px;
-    padding: 25px 25px;
+    padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
@@ -72,23 +72,32 @@ h2{
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
-    align-items: flex-start;
+
 
 }
 .card1{
+    text-align: center;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg);
 }
 .card2{
+    text-align: center;
     background-image: url(https://cdn.mos.cms.futurecdn.net/3upZx2gxxLpW7MBbnKYQLH-1200-80.jpg);
 }
 .card3{
+    text-align: center;
     background-image: url(https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480x270/7/9/6/504796_pia00135_orig_890496.jpg);
 }
 .card4{
+    text-align: center;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Io_highest_resolution_true_color.jpg/1200px-Io_highest_resolution_true_color.jpg);
 }
 .card5{
+    text-align: center;
     background-image: url(https://www.go-astronomy.com/images/observatories0.jpg);
+}
+.card6{
+    text-align: center;
+    background-image: url(https://scx2.b-cdn.net/gfx/news/2016/willearthsur.jpg);
 }
 .card:hover{
     transform: translateY(-10px);
@@ -106,9 +115,13 @@ h3{
 }
 h5 {
     color:#fff;
+    font-size: 25px;
 }
 p {
     color:#fff;
+    font-size: 20px;
+    text-shadow: #000000 0 0 10px; 
+    color: #0083bd;
 }
 .overlay
 {
@@ -152,18 +165,27 @@ h2{
 
 }
 .card1{
+    
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg);
 }
 .card2{
+    
     background-image: url(https://cdn.mos.cms.futurecdn.net/3upZx2gxxLpW7MBbnKYQLH-1200-80.jpg);
 }
 .card3{
+    
     background-image: url(https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480x270/7/9/6/504796_pia00135_orig_890496.jpg);
 }
 .card4{
+    
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Io_highest_resolution_true_color.jpg/1200px-Io_highest_resolution_true_color.jpg);
 }
 .card5{
+  
+    background-image: url(https://www.go-astronomy.com/images/observatories0.jpg);
+}
+.card6{
+    
     background-image: url(https://www.go-astronomy.com/images/observatories0.jpg);
 }
 .card:hover{
