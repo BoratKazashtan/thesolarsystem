@@ -5,42 +5,18 @@
     
     
   }
-    .showcase video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-
-    }
-    h2{
-        font-size: 3em;
-        font-weight: 600;
-        color: #fff;
-      
-        line-height: 1em;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-      }
 .showcase {
-    position: absolute;
     right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
     color: #fff;
 }
 
 .showcase video
 {
-  position: absolute;
+  position: fixed;
 
   top: 0;
   left: 0;
@@ -51,36 +27,43 @@
 }
 .overlay
 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #03a9f4;
-  opacity: 0.5;
+  background: #0f03f49f;
+  opacity: 1;
   mix-blend-mode: overlay;
  
 }
-h2{
-  font-size: 5em;
-  font-weight: 800;
+header {
+    position: relative;
+    left: 5%;
+    z-index: 1;
+
+
+}
+h2 {
+  font-size: 100px;
   color: #fff;
 
   line-height: 1em;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1;
 }
+
 .col {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
 }
 .card{
-    width: 200px;
+    width: 250px;
     height: 300px;
     position: relative;
-    top: 50px;
+    top: 30px;
     left: 150px;
     display: inline-block;
     border-radius: 10px;
@@ -98,26 +81,32 @@ h2{
 .card1{
     text-align: center;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg);
+    
 }
 .card2{
     text-align: center;
     background-image: url(https://cdn.mos.cms.futurecdn.net/3upZx2gxxLpW7MBbnKYQLH-1200-80.jpg);
+    
 }
 .card3{
     text-align: center;
     background-image: url(https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480x270/7/9/6/504796_pia00135_orig_890496.jpg);
+    
 }
 .card4{
     text-align: center;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Io_highest_resolution_true_color.jpg/1200px-Io_highest_resolution_true_color.jpg);
+    
 }
 .card5{
     text-align: center;
     background-image: url(https://www.go-astronomy.com/images/observatories0.jpg);
+    
 }
 .card6{
     text-align: center;
     background-image: url(https://scx2.b-cdn.net/gfx/news/2016/willearthsur.jpg);
+    
 }
 .card:hover{
     transform: translateY(-10px);
@@ -125,11 +114,7 @@ h2{
 
 h3{
     color: #fff;
-    position: relative;
-    top: 60px;
-    left: 30px;
     font-size: 20px;
-    z-index: 1;
     font-family:'Times New Roman', Times, serif;
 
 }
@@ -143,118 +128,72 @@ p {
     font-size: 20px;
     text-shadow: #000000 0 0 10px; 
 }
-@media only screen and (max-width: 987px)  {
-    .card{
-        width: 150px;
-        height: 200px;
-        position: relative;
-        top: 50px;
-        left: 50px;
-    }
-    p {
-        color:#fff;
-        font-size: 15px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h5 {
-        color:#fff;
-        font-size: 20px;
-        text-shadow: #000000 0 0 10px; 
-    }
-}
-@media only screen and (max-width: 888px)  {
-    .card{
-        width: 150px;
-        height: 200px;
-        position: relative;
-        top: 50px;
-        left: 50px;
-    }
-    p {
-        color:#fff;
-        font-size: 15px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h5 {
-        color:#fff;
-        font-size: 20px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h2{
-        font-size: 4em;
-        font-weight: 800;
-        color: #fff;
-      
-        line-height: 1em;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-      }
-}
+
 @media only screen and (min-width: 320px) and (max-width: 420px)  {
-    h2{
-        font-size: 2.5em;
-        font-weight: 800;
+    .block{
+        justify-content:flex-start;
+        margin: auto;
+        flex-wrap: wrap;
+        
+        width: 100%;
 
-        color: #fff;
-      
+
+
+    }
+    .col {
+        
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        
+        
+        position: relative;
+        width: 100%;
+        
+
+        
+        z-index: 1;
+    }
+    .showcase {
+        display:inline-block;
+        width: 100%;
+    }
+    
+    .showcase video{
+      position: fixed;
+    
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .card{
+        width: 140px;
+        height: 200px;
+        margin: 10px 10px;
+        position: relative;
+        top: 30px;
+        left: auto;
+    }
+    header {
+        
+        left: 0;
+        right: 0;
+        position: relative;
+        background: linear-gradient(rgb(0, 0, 57), rgb(0, 14, 204));
+    }
+    h2 {
+        font-size: 50px;
         line-height: 1em;
         text-transform: uppercase;
-        position: relative;
-        top: -320px;
-        left: -50px;
-        z-index: 1;
       }
-    .card{
-        width: 300px;
-        height: 100px;
-        position: relative;
-        top: 100px;
-        left: -220px;
-    }
-    p {
+      h5 {
         color:#fff;
-        font-size: 12px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h5 {
-        color:#fff;
-        font-size: 17px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h3 {
-        position: relative;
-        top: -370px;
-        left: 170px;
-    }
+        font-size: 20px;}
 }
-@media only screen and (min-width: 1680px) and (max-width: 1920px)  {
-    h2{
-        font-size: 6em;
-        font-weight: 800;
-
-        color: #fff;
-      
-        line-height: 1em;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-      }
-    .card{
-        width: 300px;
-        height: 400px;
-        position: relative;
-        top: 50px;
-        left: 150px;
-    }
-    p {
-        color:#fff;
-        font-size: 25px;
-        text-shadow: #000000 0 0 10px; 
-    }
-    h5 {
-        color:#fff;
-        font-size: 35px;
-        text-shadow: #000000 0 0 10px; 
-    }
+/*@media only screen and (min-width: 1600px) and (max-width: 1920px)  {
 }
