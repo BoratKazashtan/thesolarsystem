@@ -1,85 +1,84 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
 
 .showcase {
-    display:inline-block;
-    width: 100%;
-    right: 0;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
+  display:inline-block;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
 body {
-  position: fixed;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .back
 {
-  position: fixed;
+position: fixed;
 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.8;
 }
 .overlay
 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #0f03f49f;
-  opacity: 1;
-  mix-blend-mode: overlay;
- 
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #0f03f49f;
+opacity: 1;
+mix-blend-mode: overlay;
+
 }
 header {
-    position: relative;
-    text-align: center;
-    z-index: 1;
+  position: relative;
+  text-align: center;
+  z-index: 1;
 
 
 }
 button {
-  border-color: pink;
-  border-style: solid;
-  height: 40px;
-  width: 400px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
-  color: #fff;
+border-color: pink;
+border-style: solid;
+height: 40px;
+width: 400px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+color: #fff;
 
-  background-color: rgba(77,63,221,255);
-  text-shadow: 2px 2px 4px #000000;
+background-color: rgba(77,63,221,255);
+text-shadow: 2px 2px 4px #000000;
 }
 
 button:hover {
-  background-color: #2600ff4c;
-  transition: transform 0.25s;
-  
+background-color: #2600ff4c;
+transition: transform 0.25s;
+
 }
 
 h2 {
-  font-size: 100px;
-  color: #fff;
-  position: relative;
+font-size: 100px;
+color: #fff;
+position: relative;
 
 
-  line-height: 1em;
+line-height: 1em;
 }
 
 
@@ -89,78 +88,100 @@ h2 {
 
 
 h3{
-    color: #fff;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
+  color: #fff;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
 
 }
 h4 {
-  
-  z-index: 2;
-  font-size: 40px;
-  color: #fff;
-  position:relative;
-  padding: 10px;
+
+z-index: 2;
+font-size: 40px;
+color: #fff;
+position:relative;
+padding: 10px;
 }
 
-.container {
+.grid-container {
+
+
+display: grid;
+position: relative;
+width: 100%;
+height: 100%;
+}
+.grid1 {
+left: 50%;
+grid-column-start: 2;
+grid-column-end: 4;
+
+background-color: rgb(138, 192, 222);
+
+z-index: 1;
+}
+.grid2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  right: 50%;
   background-color: rgb(145, 125, 170);
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.text {
-  left: 50%;
-  position: relative;
-  width: 100%;
-  height: 100%;
   
-  background-color: rgb(138, 192, 222);
-  height: 100%;
   z-index: 1;
-}
+  }
+.grid3 {
+    right: 50%;
+    background-color: rgb(255, 191, 0);
+  
+    z-index: 1;
+    }
+.grid4 {
+  right: 50%;
+  background-color: rgb(17, 0, 255);
 
+  z-index: 1;
+  }
 
 @media only screen and (min-width: 320px) and (max-width: 420px)  {
-    
-    
-    .showcase {
-        display:inline-block;
-        width: 100%;
-    }
-    
-    .showcase video{
-      position: fixed;
-    
-      top: 0;
-      left: 0;
+  
+  
+  .showcase {
+      display:inline-block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.8;
+  }
+  
+  .showcase video{
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  header {
+      
+      left: 0;
+      right: 0;
+      position: relative;
+      background: linear-gradient(rgb(0, 0, 57), rgb(0, 14, 204));
+  }
+  h2 {
+      font-size: 50px;
+      line-height: 1em;
+      text-transform: uppercase;
     }
     
-    header {
-        
-        left: 0;
-        right: 0;
-        position: relative;
-        background: linear-gradient(rgb(0, 0, 57), rgb(0, 14, 204));
-    }
-    h2 {
-        font-size: 50px;
-        line-height: 1em;
-        text-transform: uppercase;
-      }
-      
 }
 @media only screen and (min-width: 1600px) and (max-width: 1920px)  {
-    
+  
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px)  {
-    
-    header{
-        left: 0;
+  
+  header{
+      left: 0;
 
-    }
+  }
 }
