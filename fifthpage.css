@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+  
+  .showcase {
+    display:inline-block;
+    width: 100%;
+    right: 0;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  body {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .back
+  {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  }
+  
+  
+  
+  header {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  
+  
+  }
+  button {
+  border-color: rgb(255, 249, 192);
+  border-style: solid;
+  height: 40px;
+  width: 400px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  
+  background-color: rgba(0, 85, 255, 0.577);
+  text-shadow: 2px 2px 4px #000000;
+  }
+  
+  button:hover {
+  background-color: #f0afffda;
+  transition: transform 0.25s;
+  
+  }
+  
+  h2 {
+    text-shadow: 2px 2px 4px #000000;
+    margin-left: 10px;
+    font-size: 100px;
+    color: #fff;
+    position: relative;
+    line-height: 1em;
+  }
+  model-viewer {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  
+  
+  
+  h3{
+    text-shadow: 2px 2px 4px #000000;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  
+  }
+  h4 {
+    text-shadow: 2px 2px 4px #000000;
+  z-index: 2;
+  font-size: 40px;
+  color: #fff;
+  position:relative;
+  padding: 10px;
+  }
+  h5 {
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+  
+  }
+  .text {
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 50%;
+    background-color: rgba(30, 0, 255, 0.541);
+    position: relative;
+  }
+  .text:hover {
+    background-color: rgba(0, 229, 255, 0.233);
+  
+  }
+  .consistsof {
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+    top: 950px;
+    text-align: center;
+  
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+  }
+  .cards{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    top: 1000px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819-02.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  
+  
+  }
+  .cards1 {
+    text-align: center;
+    color: rgba(240, 248, 255, 0);
+    background-image: url("https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/243b5d41b8f5321c99a8124c1c41d600/large.gif");
+  }
+  .cards1:hover {
+    position: relative;
+    color: rgb(240, 248, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 50px;
+    
+    
+  }
+  .Layers {
+    top: 1100px;
+    margin: 40px;
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+  
+  
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 420px)  {
+    
+    
+    .showcase {
+        display:inline-block;
+        width: 100%;
+    }
+    
+    .showcase video{
+      position: fixed;
+    
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    
+    header {
+        
+        left: 0;
+        right: 0;
+        position: relative;
+        background: linear-gradient(rgb(0, 0, 57), rgb(0, 14, 204));
+    }
+    h2 {
+        font-size: 50px;
+        line-height: 1em;
+        text-transform: uppercase;
+      }
+      
+  }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px)  {
+    
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1599px)  {
+    
+    header{
+        left: 0;
+  
+    }
+  }
