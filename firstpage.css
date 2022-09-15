@@ -109,10 +109,10 @@ h5 {
   background-color: rgb(141, 37, 37);
   position: relative;
 }
-.model {
-  left: 50%;
-  width:50%;
-  
+model-viewer {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
 }
 model-viewer {
   
