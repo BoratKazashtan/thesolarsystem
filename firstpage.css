@@ -104,15 +104,10 @@ h5 {
 .text {
   border-radius: 15px;
   margin-top: 30px;
-  margin-left: 10px;
-  width: 50%;
-  background-color: rgb(255, 174, 0);
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(141, 37, 37);
   position: relative;
-}
-
-.text:hover {
-  background-color: rgba(255, 238, 0, 0.712);
-
 }
 .model {
   left: 50%;
