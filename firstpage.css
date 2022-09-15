@@ -109,9 +109,19 @@ h5 {
   background-color: rgb(255, 174, 0);
   position: relative;
 }
+
 .text:hover {
   background-color: rgba(255, 238, 0, 0.712);
 
+}
+.model {
+  left: 50%;
+  width:50%;
+  
+}
+model-viewer {
+  
+  margin: 0 auto;
 }
 .consistsof {
   font-size: 40px;
