@@ -119,7 +119,7 @@ h5 {
 }
 model-viewer {
   width: 700px;
-  height: 600px;
+  height: 700px;
   margin: 0 auto;
 }
 .consistsof {
@@ -207,6 +207,11 @@ h6 {
   position: relative;
   width: 50%;
   
+}
+.sollarsysmodel {
+  width: 100%;
+  background-color: #000000;
+  position: relative;
 }
 @media only screen and (min-width: 320px) and (max-width: 420px)  {
   
