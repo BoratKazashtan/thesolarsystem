@@ -45,7 +45,7 @@
   
   }
   button {
-  border-color: rgb(255, 249, 192);
+  border-color: rgb(232, 208, 0);
   border-style: solid;
   height: 40px;
   width: 400px;
@@ -53,12 +53,12 @@
   font-size: 30px;
   color: #fff;
   
-  background-color: rgb(255, 174, 0);
+  background-color: rgb(233, 159, 0);
   text-shadow: 2px 2px 4px #000000;
   }
   
   button:hover {
-  background-color: #ff0000bc;
+  background-color: #6e0000bc;
   transition: transform 0.25s;
   
   }
@@ -74,11 +74,22 @@
   
   
   
-  
+  p{
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 2;
+    font-size: 40px;
+    color: #fff;
+    position:relative;
+    padding: 10px;
+
+  }
   
   
   
   h3{
+    position: relative;
+    text-align: center;
+    z-index: 1;
     text-shadow: 2px 2px 4px #000000;
     color: #fff;
     font-size: 20px;
@@ -107,7 +118,15 @@
     margin-bottom: 1000px;
     padding: 20px;
     width: 100%;
-    background-color: rgb(141, 37, 37);
+    background-color: rgb(102, 0, 0);
+    position: relative;
+  }
+  .consistence {
+    border-radius: 15px;
+    margin-top: 1030px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(102, 0, 0);
     position: relative;
   }
   
@@ -122,17 +141,7 @@
     height: 700px;
     margin: 0 auto;
   }
-  .consistsof {
-    padding: 40px;
-    font-size: 40px;
-    color: #fff;
-    z-index: 2;
-    position: relative;
-    text-shadow: 2px 2px 4px #000000;
-    
-    text-align: center;
-  
-  }
+
   
   h6 {
     color: rgb(0, 0, 0);
@@ -146,73 +155,7 @@
   
   
   }
-  .grid {
-    z-index: 2;
-    
-    
-    position: relative;
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr 2fr;
-    
-    
-  }
-  .grid_1{
-    background-color: rgb(248,196,116);
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-  .grid_2{
-    background-color: rgb(141, 37, 37);
-    
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    
-  }
-  .grid_3{
-    background-color: rgb(141, 37, 37);
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  
-  .surtext{
-    margin: 15px;
-  }
-  .anatomyimg{
-    width: 100%;
-  }
-  .hrblock{
-    position: relative;
-    width: 100%;
-    background-color: #000000;
-  }
-  .diagram {
-    background-color: #000000;
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 20px;
-    position: relative;
-  }
-  .hrdiagram {
-    
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    position: relative;
-    width: 50%;
-    
-  }
-  .sollarsysmodel {
-    width: 100%;
-    background-color: #000000;
-    position: relative;
-  }
+ 
   @media only screen and (min-width: 320px) and (max-width: 420px)  {
     
     
